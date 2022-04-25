@@ -1,0 +1,43 @@
+.page-title {
+  background-color : var(--color-body-section_bg2);
+  color:var(--color-body-section_bg2_text);
+  text-align       : center;
+  padding          : var(--margin-size-xl) 0;
+  margin-bottom    : 30px;
+
+  @include mq(md) {
+    margin-bottom : 80px;
+  }
+
+  .title {
+    font-size     : var(--fontsize-xxl);
+    margin-bottom : 20px;
+    -ms-word-wrap : break-word;
+    word-wrap     : break-word;
+    line-height   : 140%;
+  }
+
+  .post-meta {
+    font-size   : var(--fontsize-l);
+    font-weight : 400;
+
+    > * {
+      padding : 0 10px;
+      color   : var(--color-text);
+    }
+  }
+
+  .archive-description {
+    margin      : 20px auto 0;
+    font-size   : var(--fontsize-l);
+    line-height : 177%;
+  }
+
+  .thumbnail {
+    margin-top : 30px;
+
+    @include mq(md) {
+      margin-top : 70px;
+    }
+  }
+}

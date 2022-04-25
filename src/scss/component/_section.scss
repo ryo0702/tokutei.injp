@@ -1,0 +1,140 @@
+.section {
+    @include mq(sm) {
+        padding:50px 0;
+    }
+    @include mq(md) {
+        padding:100px 0;
+    }
+    &:nth-child(2n) {
+        background-color: #efefef;
+     }
+     &.section_blue {
+        background-color: #1d2c5c;
+     }
+}
+.section_bgi {
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.titleset {
+    margin-bottom:40px;
+    .title {
+        text-align: center;
+        color: #000000;
+        text-shadow:0 2px 0 rgba(#ffffff,1),0 -2px 0 rgba(#ffffff,1),0 5px 8px rgba(#000000,0.3);
+        @include mq(sm) {
+            font-size:28px;
+            line-height:140%;
+        }
+        @include mq(md) {
+            font-size:48px;
+            line-height:140%;
+        }
+    }
+    .lead {
+        margin-top:20px;
+        @include mq(sm) {
+            font-size:13px;
+            line-height:180%;
+        }
+        @include mq(md) {
+            font-size:15px;
+            line-height:180%;
+        }
+    }
+}
+
+.toppage_problem {
+    .problems {
+        & > ul {
+            & > li {
+                font-weight: bold;
+                background-repeat:no-repeat;
+                background-position: center left;
+                background-image: url('../images/checkbox.svg');
+                @include mq(sm) {
+                    font-size:20px;
+                    padding-left:35px;
+                    background-size: 25px 25px;
+                    margin-bottom:15px;
+                }
+                @include mq(md) {
+                    font-size:28px;
+                    padding-left:50px;
+                    background-size: 35px 35px;
+                    margin-bottom:15px;
+                }
+                span {
+                    text-decoration: underline;
+                    text-decoration-color:#dd0000;
+                    text-decoration-thickness:3px;
+                }
+            }
+        }
+    }
+}
+
+.cta {
+    h2.title {
+        text-align: center;
+        color: #000000;
+        text-shadow:0 2px 0 rgba(#ffffff,1),0 -2px 0 rgba(#ffffff,1),0 5px 8px rgba(#000000,0.3);
+        margin-bottom:20px;
+        @include mq(sm) {
+            font-size:22px;
+            line-height:140%;
+        }
+        @include mq(md) {
+            font-size:48px;
+            line-height:140%;
+        }
+    }
+    .subtitle {
+        text-align: center;
+        color:#1d2c5c;
+        margin-bottom:20px;
+        @include mq(sm) {
+            font-size:13px;
+            text-align: left;
+        }
+        @include mq(md) {
+            font-size:20px;
+        }
+    }
+    .form_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom:20px;
+        @include mq(sm) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        @include mq(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .form1,.form2 {
+            @include mq(sm) {
+                width:100%;
+            }
+            @include mq(md) {
+                width:49%;
+            }
+        }
+    }
+    .submit {
+        text-align: center;
+        button {
+            @extend .button;
+            background-color: #dd0000;
+            color:#FFF;
+            padding:15px 40px;
+            box-shadow:0 5px 5px -1px rgba(#000,0.15);
+            text-shadow:0 1px 1px rgba(#000,0.1);
+            font-size:25px;
+            font-weight: bold;
+            margin-top:20px;
+        }
+    }
+}

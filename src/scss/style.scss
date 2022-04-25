@@ -1,0 +1,192 @@
+// CSS Config
+:root {
+  // font family
+  --fontfamily-body:"Noto Sans JP", sans-serif;
+  // Colors
+  --color-bgc-card:#ffffff;
+  --color-text-card:#2c2c2c;
+  --color-text-navbar:#000;
+  --color-bgc-navbar:#FFF;
+  --color-bgc-mainvisual:#e8e8e8;
+  --color-text-mainvisual:#000;
+
+  // Navbar
+  --navbar-height:70px;
+  // Mainvisual
+
+  // irregular font size
+  --fontsize-navbar-tel    : 30px;
+
+  // boxshadow
+  --boxshadow              : 0 10px 20px rgba(0, 0, 0, 0.15);
+  --boxshadow-s            : 0 5px 10px rgba(0, 0, 0, 0.15);
+  --boxshadow-l            : 0 0 1px rgba(0, 0, 0, 0.15);
+
+  // Colors
+  --color-body             : #fff;
+  --color-body-section_bg1 : #fff;
+  --color-body-section_bg1_text : #505050;
+  --color-body-section_bg2 : #f3f3f3;
+  --color-body-section_bg2_text : #505050;
+  --color-line      : #c4c4c4;
+
+  --color-text             : #505050;
+  --color-text-title_lg    : #dbdbdb;
+  --color-text-title_lg2    : #dbdbdb;
+  --color-text-link    : #1a1a1a;
+  --color-text-link_hover    : #383838;
+
+  --color-card :#FFF;
+  --color-card-text    : #505050;
+
+  --color-form :#FFF;
+  --color-form-text    : #505050;
+  --color-form-placeholder    : #b3b3b3;
+
+  --color-posts             : #505050;
+  --color-posts-h1h2_text    : #505050;
+  --color-posts-h1h2_bg    : #dbdbdb;
+  --color-posts-h1h2_border    : #c4c4c4;
+  --color-posts-h3_text    : #505050;
+  --color-posts-h3_border    : #c4c4c4;
+
+  --color-primary          : #2677E5;
+  --color-primary-text   : #fff;
+  --color-primary-hover   : #1f62be;
+  --color-danger           : #E52626;
+  --color-danger-text   : #fff;
+  --color-danger-hover    : #b81f1f;
+  --color-warning          : #FF8900;
+  --color-warning-text   : #fff;
+  --color-warning-hover   : #bb6400;
+  --color-success          : #16b145;
+  --color-success-text   : #fff;
+  --color-success-hover   : #198639;
+  --color-info             : #12C6F0;
+  --color-info-text   : #fff;
+  --color-info-hover      : #0d9ab9;
+
+  --color-navbar-top-bg    : #fff;
+  --color-navbar-top-bg_hover    : #f5f5f5;
+  --color-navbar-top-text    : #4d4d4d;
+  --color-navbar-bottom-bg : #f3f3f3;
+  --color-navbar-bottom-bg_hover : #e7e7e7;
+  --color-navbar-bottom-text : #4d4d4d;
+  --color-navbar-line : #e4e4e4;
+
+  --color-table      : #ffffff;
+  --color-table-text      : #505050;
+  --color-table-th_bg      : #dddddd;
+  --color-table-border      : #c4c4c4;
+
+  --color-footer      : #dfdfdf;
+  --color-footer-text      : #8b8b8b;
+
+  --color-keyvisual           : #ffffff;
+  --color-keyvisual_btn           : #e52626;
+  --color-keyvisual_btn-darken    : #b81f1f;
+  --color-keyvisual_btn-text      : #ffffff;
+
+  --color-form_line : #c4c4c4;
+  --color-form_placeholder : #c4c4c4;
+  --color-form_placeholder : #c4c4c4;
+
+  --margin-size-xl         : 50px;
+  --margin-size-l          : 30px;
+  --margin-size-m          : 25px;
+  --margin-size-s          : 15px;
+
+  // gutter
+  --gutter-y               : 15px;
+  --gutter-x               : 15px;
+}
+
+@media screen and (min-width : 768px) {
+  :root {
+    --margin-size-xl : 100px;
+    --margin-size-l  : 50px;
+    --fontsize-xxxl  : 70px;
+    --fontsize-xxl   : 50px;
+    --fontsize-l     : 18px;
+  }
+}
+
+// Breakpoints
+$breakpoints : (
+  "sm": "screen and (min-width: 0px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1000px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
+
+
+// Common
+@import "./common/mixin";
+@import "./common/reset";
+@import "./common/common";
+@import "./common/margin";
+// @import "./common/box";
+@import "./common/column";
+// @import "./common/text";
+
+// component
+@import "./component/container";
+@import "./component/flexbox";
+@import "./component/card";
+@import "./component/button";
+@import "./component/section";
+
+// Utilities
+@import "./utility/navbar";
+@import "./utility/mainvisual";
+@import "./utility/footermenu";
+@import "./utility/result";
+@import "./utility/result_contact";
+@import "./utility/page_contact";
+
+// // Utilities
+// @import "./inc/btn";
+// @import "./inc/thumbnail";
+// @import "./inc/card";
+// @import "./inc/title";
+// @import "./inc/slider";
+// @import "./inc/table";
+// @import "./inc/pagination";
+// @import "./inc/single";
+
+.text_s {
+  font-size:12px;
+}
+.form_flow {
+  padding:20px;
+  border:solid 1px var(--color-line);
+  margin-bottom:30px;
+  & > ul {
+    & > li {
+      position: relative;
+      padding-left:30px;
+      margin-bottom:20px;
+      &:last-child {
+        margin-bottom:0px;
+      }
+      h3 {
+        font-size:16px;
+        z-index:1;
+      }
+      p {
+        font-size:13px;
+        z-index:1;
+      }
+      .number {
+        position: absolute;
+        font-size:30px;
+        top:0px;
+        left:-10px;
+        font-weight: bold;
+        font-style: italic;
+        z-index:0;
+        color:#c3c3c3;
+      }
+    }
+  }
+}

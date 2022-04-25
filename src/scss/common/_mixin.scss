@@ -1,0 +1,147 @@
+@mixin loader() {
+  &::before {
+    height          : 1em;
+    width           : 1em;
+    display         : block;
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    margin-left     : -0.5em;
+    margin-top      : -0.5em;
+    content         : "";
+    animation       : spin 0.5s linear infinite;
+    background      : url("../images/loader.svg") center center;
+    background-size : cover;
+    line-height     : 1;
+    text-align      : center;
+    font-size       : 2em;
+    color           : rgba(#000, 0.75);
+    z-index         : 3;
+  }
+  &::after {
+    content    : "";
+    position   : absolute;
+    z-index    : 2;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    background : rgba(#fff, 0.75);
+  }
+}
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin rows($class: "row", $columns: 12) {
+  .#{$class} {
+    display      : flex;
+    flex-wrap    : wrap;
+    margin-top   : calc(var(--gutter-y) * -1);
+    margin-left  : calc(var(--gutter-x) * -0.5);
+    margin-right : calc(var(--gutter-x) * -0.5);
+  }
+
+  .#{$class}:before,
+  .#{$class}:after {
+    content : "";
+    display : table;
+    clear   : both;
+  }
+
+  .#{$class} > *,
+  .#{$class} [class*="col_"] {
+    width         : 100%;
+    flex          : 0 0 100%;
+    margin-top    : var(--gutter-y);
+    padding-left  : calc(var(--gutter-x) * 0.5);
+    padding-right : calc(var(--gutter-x) * 0.5);
+  }
+
+  @for $col from 1 through $columns {
+    $num   : $columns - $col + 1;
+    $width : $num / $columns * 100%;
+
+    .#{$class} .col_#{$num} {
+      width : $width;
+      flex  : 0 0 auto;
+    }
+  }
+
+  @each $name, $value in $breakpoints {
+    @for $col from 1 through $columns {
+      $num   : $columns - $col + 1;
+      $width : $num / $columns * 100%;
+      .#{$class} .col_#{$name}_#{$num} {
+        @include mq($name) {
+          width : $width;
+          flex  : 0 0 auto;
+        }
+      }
+    }
+  }
+
+  // extend Cols 5
+  $col5 : (
+    15:20%,
+    25:40%,
+    35:60%,
+    45:80%,
+  );
+  @each $name, $value in $breakpoints {
+    @each $num, $width in $col5 {
+      .#{$class} .col_#{$num} {
+        width : $width;
+        flex  : 0 0 auto;
+      }
+      .#{$class} .col_#{$name}_#{$num} {
+        @include mq($name) {
+          width : $width;
+          flex  : 0 0 auto;
+        }
+      }
+    }
+  }
+
+  // row columns class
+  @for $col from 1 through $columns {
+    .cols_#{$col} .col {
+      width : 100% / $col;
+      flex  : 0 0 auto;
+    }
+
+    @each $name, $value in $breakpoints {
+      .cols_#{$name}_#{$col} .col {
+        @include mq($name) {
+          width : 100% / $col;
+          flex  : 0 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform : rotate(0deg);
+    transform         : rotate(0deg);
+  }
+  to {
+    -webkit-transform : rotate(360deg);
+    transform         : rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform : rotate(0deg);
+    transform         : rotate(0deg);
+  }
+  to {
+    -webkit-transform : rotate(360deg);
+    transform         : rotate(360deg);
+  }
+}

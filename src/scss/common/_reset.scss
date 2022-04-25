@@ -1,0 +1,143 @@
+body {
+  margin                  : 0;
+  padding                 : 0;
+  -moz-osx-font-smoothing : grayscale;
+  -webkit-font-smoothing  : antialiased;
+}
+
+img {
+  max-width      : 100%;
+  height         : auto;
+  vertical-align : top;
+}
+
+* {
+  box-sizing : border-box;
+}
+
+ul,
+ol {
+  padding         : 0;
+  margin          : 0;
+  list-style-type : none;
+}
+
+p {
+  margin : 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+.table {
+  margin : 0;
+}
+
+a {
+  text-decoration : none;
+}
+
+[type="text"],
+[type="email"],
+[type="password"],
+[type="tel"],
+textarea,
+select {
+  width              : 100%;
+  padding            : 15px 10px;
+  border-radius      : 3px;
+  border             : 1px solid var(--color-form_line);
+  background-color   : #fff;
+  font-weight        : 500;
+  font-size          : 18px;
+  -webkit-appearance : none;
+  font-family        : inherit;
+
+  &::placeholder {
+    color       : --color-form_placeholder;
+    font-weight : 500;
+  }
+
+  &:focus {
+    outline : none;
+    border  : 1px solid var(--color-form_line);
+  }
+}
+
+select {
+  background      : #fff url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E") no-repeat right 10px top 55%;
+  background-size : auto;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border    : 0;
+  clip      : rect(1px, 1px, 1px, 1px);
+  clip-path : inset(50%);
+  height    : 1px;
+  margin    : -1px;
+  overflow  : hidden;
+  padding   : 0;
+  position  : absolute;
+  width     : 1px;
+  word-wrap : normal; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color : #eee;
+  clip             : auto;
+  clip-path        : none;
+  color            : #444;
+  display          : block;
+  font-size        : 1em;
+  height           : auto;
+  left             : 5px;
+  line-height      : normal;
+  padding          : 15px 23px 14px;
+  text-decoration  : none;
+  top              : 5px;
+  width            : auto;
+  z-index          : 100000;
+  /* Above WP toolbar. */
+}
+
+.screen-reader-text.skip-link:focus {
+  -webkit-clip-path : none;
+  clip-path         : none
+}
+
+/* Loading */
+.blockUI.blockOverlay {
+  position : relative;
+  @include loader();
+}
+
+.loader,
+.loading {
+  position : relative;
+  @include loader();
+}
+
+.container,
+.container-fluid {
+  padding-left  : 15px;
+  padding-right : 15px;
+}
+
+.contents_archive,
+.contents_single {
+  margin-bottom : var(--margin-size-xl);
+}
+
+.contents_archive .service_list .excerpt {
+  overflow           : hidden;
+  text-overflow      : ellipsis;
+  display            : -webkit-box;
+  -webkit-line-clamp : 3;
+  -webkit-box-orient : vertical;
+}
