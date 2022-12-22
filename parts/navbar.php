@@ -2,7 +2,7 @@
     <div class="container">
         <div class="flexbox_navbar wrap">
             <h1 class="logo flexbox_center">
-                <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/injp-tokutei.png'; ?>" alt=""></a></div>
+                <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/injp-tokutei.png'; ?>" alt="inJP特定技能"></a></div>
             </h1>
             <nav class="menu flexbox">
                 <ul class="flexbox">
@@ -29,14 +29,12 @@
 
 <div class="drawermenu">
     <div class="inner">
-        <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/logo.png'; ?>" alt=""></a></div>
+        <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/injp-tokutei.png'; ?>" alt="inJP特定技能"></a></div>
         <ul>
             <li><a href="<?php echo site_url(); ?>">ホーム</a></li>
-            <li><a href="<?php echo site_url('/?pagetype=estimate_result'); ?>">お見積り一覧</a></li>
-            <!-- <li><a href="<?php echo site_url('/?pagetype=about_injp'); ?>">inJP技能実習生について</a></li> -->
+            <li><a href="<?php echo site_url('/?pagetype=estimate_result'); ?>">外国人人材一覧</a></li>
             <li class="smallmenu">技能実習制度について</li>
-            <li><a href="<?php echo site_url('/?pagetype=about_seido'); ?>">技能実習制度について</a></li>
-            <li><a href="<?php echo site_url('/?pagetype=about_kanridantai'); ?>">監理団体の選び方</a></li>
+            <li><a href="<?php echo site_url('/?pagetype=about_seido'); ?>">特定技能外国人について</a></li>
         </ul>
         <div class="drawermenu_close_button">閉じる</div>
     </div>

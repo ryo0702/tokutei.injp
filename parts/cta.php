@@ -1,9 +1,9 @@
 <section class="cta section section_blue">
     <div class="container_s">
         <div class="form card card_padding_l">
-            <h2 class="title">その場で比較お見積り</h2>
-            <p class="subtitle">簡単、すぐにお見積り結果をお届けいたします。<br />当然、外部(海外の送り出し機関)に情報共有いたしませんので、迷惑な営業電話は行っておりません。</p>
-            <form id="contact-form" action="<?php echo site_url('/?pagetype=estimate_result'); ?>" method="post"　enctype="multipart/form-data">
+            <h2 class="title">その場でマッチング</h2>
+            <p class="subtitle">登録なしで特定技能外国人とのマッチングが簡単に行えます。<br />しかも、紹介料は0円です。</p>
+            <form id="contact-form" action="<?php echo site_url('/?pagetype=estimate_result'); ?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="wpnonce" value="<?php echo wp_create_nonce( get_bloginfo('name').'nonce_'.date('Ymd') ); ?>" />
                 <div class="form_wrap">
                     <div class="form1">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="submit">
-                    <button type="submit" name="submit" value="sending">簡単お見積り</button>
+                    <button type="submit" name="submit" value="sending">その場で簡単マッチング</button>
                 </div>
             </form>
         </div>

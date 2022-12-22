@@ -73,6 +73,15 @@ $array_metabox_hr = array(
                     'options'  => $array_jlpt,
                     'title' => '希望手取り給料(円)',
                 ),
+                array(
+                    'id'    => 'toppageview',
+                    'type'  => 'select',
+                    'options'  => array(
+                        '' => 'トップページに非表示',
+                        'viewtoppage_on' => 'トップページに表示'
+                    ),
+                    'title' => 'トップページへの表示',
+                ),
             ),
         ),
         array(
