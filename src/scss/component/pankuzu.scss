@@ -1,0 +1,29 @@
+.pankuzu {
+    padding-top:20px;
+    padding-bottom:20px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+            &::after {
+                content: ">";
+                margin-left:10px;
+                margin-right:10px;
+            }
+            &:last-child {
+                &::after {
+                    content: "";
+                    margin-left:0;
+                    margin-right:0;
+                }
+            }
+            a {
+                color:#313131;
+            }
+            span {
+                color:#9b9b9b;
+            }
+        }
+    }
+}

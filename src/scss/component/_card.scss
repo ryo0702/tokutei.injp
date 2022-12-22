@@ -1,0 +1,73 @@
+.card {
+    padding:20px;
+    color: var(--color-text-card);
+    background-color: var(--color-bgc-card);
+    border-radius:5px;
+    box-shadow:0 10px 15px 1px rgba(#000,0.15);
+    position: relative;
+
+    .card_title,p {
+        margin-bottom:15px;
+        &:last-child {
+            margin-bottom:0;
+        }
+    }
+    
+    &.card_number{
+        .number {
+            position: absolute;
+            top:0;
+            left:20px;
+            font-size:75px;
+            opacity: 0.5;
+            font-weight: bold;
+        }
+    }
+    
+
+    .card_title {
+        font-weight: bold;
+        text-align: center;
+        text-shadow:0 3px 3px rgba(#000,0.1),0 1px 1px rgba(#000,0.25);
+        @include mq(sm) {
+            font-size:20px;
+        }
+        @include mq(md) {
+            font-size:25px;
+        }
+        &::after {
+            content:" ";
+            display: block;
+            width:100px;
+            height:1px;
+            background-color: #fff;
+            margin-top:15px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+
+    p {
+        @include mq(sm) {
+            font-size:13px;
+            line-height:180%;
+        }
+        @include mq(md) {
+            font-size:15px;
+            line-height:180%;
+        }
+    }
+
+    &.card_blue {
+        background-color: #1d2c5c;
+        color:#FFF;
+    }
+    &.card_padding_l {
+        @include mq(sm) {
+            padding:20px;
+        }
+        @include mq(md) {
+            padding:40px;
+        }
+    }
+}

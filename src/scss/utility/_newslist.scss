@@ -1,0 +1,44 @@
+.toppage_news {
+    & > .list_news {
+        background-color: #fff;
+        padding:20px;
+        border-radius:5px;
+        box-shadow:0 10px 15px 1px rgba(#000,0.15);
+        & > ul {
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                @include mq(sm) {
+                    display: block;
+                }
+                @include mq(md) {
+                    display: flex;
+                }
+                // @include mq(md) {width:20%;}
+                .date {
+                    width:20%;
+                    font-size:15px;
+                    @include mq(sm) {
+                        width:100%;
+                    }
+                    @include mq(md) {
+                        width:20%;
+                    }
+                }
+                .title {
+                    width:80%;
+                    font-size:20px;
+                    @include mq(sm) {
+                        width:100%;
+                    }
+                    @include mq(md) {
+                        width:80%;
+                    }
+                }
+            }
+        }
+    }
+}

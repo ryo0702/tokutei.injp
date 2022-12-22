@@ -1,0 +1,16 @@
+.pagination{
+    margin-top:25px;
+    span,a {
+        margin-right:5px;
+        display: inline-block;
+        border:solid 1px var(--color-line);
+        border-radius: 5px;
+        padding:15px;
+    }
+    span {
+        background-color: #fff;
+    }
+    a {
+        background-color: var(--color-line);
+    }
+}

@@ -1,0 +1,145 @@
+.mainvisual {
+    position: relative;
+    .bgi {
+        top:0;
+        left:0;
+        z-index:0;
+        position: absolute;
+        background-color: var(--color-bgc-mainvisual);
+        background-repeat:no-repeat;
+        background-size: cover;
+        height:100%;
+        width:100%;
+    }
+    .bgc {
+        top:0;
+        left:0;
+        position: absolute;
+        opacity: 0.1;
+        z-index:1;
+        background-color: #000;
+        height:100%;
+        width:100%;
+    }
+    .mainvisual_content {
+        z-index:10;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        @include mq(sm) {
+            padding-top:50px;
+            padding-bottom:50px;
+        }
+        @include mq(md) {
+            padding-top:100px;
+            padding-bottom:100px;
+        }
+        form {
+            max-width:100%;
+            width:480px;
+            position: relative;
+            .card {
+                box-shadow:0 20px 10px -10px rgba(#000,0.15);
+                h2 {
+                    color: #000000;
+                    text-shadow:0 2px 0 rgba(#ffffff,1),0 -2px 0 rgba(#ffffff,1),0 5px 8px rgba(#000000,0.3);
+                    @include mq(sm) {
+                        line-height: 120%;
+                        font-size:28px;
+                        margin-bottom:20px;
+                    }
+                    @include mq(md) {
+                        line-height: 120%;
+                        font-size:40px;
+                        margin-bottom:20px;
+                    }
+                }
+                p {
+                    font-size:13px;
+                    line-height:170%;
+                    strong {
+                        text-decoration: underline;
+                        text-decoration-color:#fff200;
+                        text-decoration-thickness:3px;
+                    }
+                }
+                .form_wrap {
+                    .form1,.form2 {
+                        width:100%;
+                        margin-bottom:10px;
+                    }
+                }
+                .email {
+                    .title {
+                        font-size: 12px;
+                    }
+                }
+                .area_button {
+                    margin-top:20px;
+                    button {
+                        @extend .button;
+                        background-color: #dd0000;
+                        color:#FFF;
+                        padding:15px 40px;
+                        width:100%;
+                        box-shadow:0 5px 5px -1px rgba(#000,0.15);
+                        text-shadow:0 1px 1px rgba(#000,0.1);
+                        & > .line1,& > .line2 {
+                            display: block;
+                        }
+                        & > .line1 {
+                            font-size:14px;
+                        }
+                        & > .line2 {
+                            font-size:25px;
+                        }
+                    }
+                }
+            }
+            .balloon {
+                position: absolute;
+                background-color: #1d2c5c;
+                border:solid 3px #FFF;
+                text-align: center;
+                color:#FFF;
+                box-shadow:0 10px 10px -5px rgba(#000,0.15);
+                @extend .flexbox_center;
+                @include mq(sm) {
+                    top:-25px;
+                    right:-25px;
+                    width:100px;
+                    height:100px;
+                    border-radius: 100px;
+                }
+                @include mq(md) {
+                    top:-20px;
+                    right:-20px;
+                    width:125px;
+                    height:125px;
+                    border-radius: 125px;
+                }
+                .line1 {
+                    font-size:18px;
+                    line-height: 18px;
+                    margin-bottom:3px;
+                    font-weight: bold;
+                }
+                .line2 {
+                    font-size:26px;
+                    font-weight: bold;
+                    line-height: 26px;
+                    & > span {
+                        font-size:14px;
+                        font-weight: bold;
+                    }
+                }
+                .line3 {
+                    font-size:18px;
+                    line-height: 18px;
+                    margin-top:3px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

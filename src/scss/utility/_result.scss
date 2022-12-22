@@ -1,0 +1,182 @@
+.result,.result_top {
+    @include mq(sm) {
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+    @include mq(md) {
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    .result_title {
+        h1 {
+            font-size:28px;
+            line-height:140%;
+            color: #000000;
+            text-shadow:0 2px 0 rgba(#ffffff,1),0 -2px 0 rgba(#ffffff,1),0 3px 5px rgba(#000000,0.3);
+            font-weight: bold;
+            margin-bottom:25px;
+        }
+    }
+    .lead {
+        margin-bottom:20px;
+    }
+
+    ul.list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom:-20px;
+        li {
+            margin-bottom:25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: space-between;
+            position: relative;
+            @include mq(sm) {
+                width:100%;
+            }
+            @include mq(md) {
+                width:49%;
+            }
+            .content_area {
+                .title_area {
+                    a {
+                        display: block;
+                        font-size:20px;
+                        font-weight: bold;
+                        margin-bottom:10px;
+                    }
+                }
+                .kanrihi_area {
+                    font-size:13px;
+                    margin-bottom:10px;
+                    .area_title {
+                        font-size:15px;
+                        display: inline-block;
+                        margin-right:10px;
+                    }
+                    .area_content {
+                        font-size:15px;
+                        display: inline-block;
+                        .price_number {
+                            font-size:18px;
+                            font-weight: bold;
+                        }
+                        .small {
+                            font-size:10px;
+                        }
+                    }
+                }
+                .discount_description {
+                    p {
+                        margin:0;
+                        font-size:13px;
+                        padding:10px;
+                        background-color: rgb(247, 247, 247);
+                        border-radius:5px;
+                    }
+                    
+                }
+            }
+            .button_area {
+                margin-top:10px;
+                & > a {
+                    @extend .button;
+                    background-color: var(--color-keyvisual_btn);
+                    padding:10px 20px;
+                    color:#FFF;
+                    text-align: center;
+                    display: block;
+                }
+            }
+
+            .badge_area {
+                position:absolute;
+                top:-13px;
+                right:-13px;
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                @include mq(sm) {
+                    top:-20px;
+                    right:-13px;
+                }
+                @include mq(md) {
+                    top:-13px;
+                    right:-13px;
+                }
+                .badge {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    font-size:12px;
+                    width:60px;
+                    height:60px;
+                    padding:10px;
+                    text-align: center;
+                    background-color: rgb(143, 87, 87);
+                    margin-left:5px;
+                    border-radius:30px;
+                    color:#fff;
+                    z-index:3;
+                    font-weight: bold;
+                    border:2px solid #FFF;
+                    box-shadow:0 3px 5px rgba(#000,0.1);
+                    @include mq(sm) {
+                        width:53px;
+                        height:53px;
+                        padding:5px;
+                    }
+                    @include mq(md) {
+                        width:60px;
+                        height:60px;
+                        padding:10px;
+                    }
+                    &.badge_zenkoku {
+                        background-color: #1aa06d;
+                        color:#FFF;
+                    }
+                    &.badge_yasui {
+                        background-color: #c61919;
+                        color:#FFF;
+                    }
+                    &.badge_count1 {
+                        background-color: #bc9a4f;
+                        color:#FFF;
+                    }
+                    &.badge_count2 {
+                        background-color: #6a6a6a;
+                        color:#FFF;
+                    }
+                    &.badge_count3 {
+                        background-color: #bc734f;
+                        color:#FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+.result_top {
+    ul.list {
+        & > li {
+            .badge_area {
+                .badge {
+                    &.badge_count1 {
+                        display: none;
+                    }
+                    &.badge_count2 {
+                        display: none;
+                    }
+                    &.badge_count3 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

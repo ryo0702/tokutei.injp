@@ -1,0 +1,309 @@
+.okuridashi_contact {
+    margin-top:50px;
+    margin-bottom:50px;
+    .okuridashi_title {
+        margin-bottom:25px;
+        .logo {
+            text-align: center;
+            img {width:180px;}
+            margin-bottom:20px;
+        }
+        h1 {
+            font-size:28px;
+            line-height:140%;
+            color: #000000;
+            text-shadow:0 2px 0 rgba(#ffffff,1),0 -2px 0 rgba(#ffffff,1),0 3px 5px rgba(#000000,0.3);
+            font-weight: bold;
+            margin-bottom:5px;
+            text-align: center;
+        }
+        p {
+            font-size:13px;
+            text-align: center;
+        }
+    }
+
+    section {
+        margin-bottom:35px;
+        &:last-child {
+            margin-bottom:0;
+        }
+        h2.subtitle {
+            font-size:20px;
+            border-bottom:solid 1px #e5e5e5;
+            margin-bottom:15px;
+            padding-bottom:15px;
+        }
+    }
+
+    .area_description {
+        h2 {
+            font-size:22px;
+            margin-bottom:20px;
+        }
+        p {
+            font-size:13px;
+            line-height:200%;
+        }
+    }
+
+    .photo_main {
+        padding:10px;
+        border:solid 1px #e5e5e5;
+        box-shadow:0 5px 10px rgba(#000,0.1);
+        @include mq(sm) {
+            padding:5px;
+            border:solid 1px #e5e5e5;
+            box-shadow:0 3px 5px rgba(#000,0.1);
+        }
+        @include mq(md) {
+            padding:10px;
+            border:solid 1px #e5e5e5;
+            box-shadow:0 5px 10px rgba(#000,0.1);
+        }
+        img {
+            width:100%;
+        }
+    }
+
+    .contents_tokushoku {
+        & > li {
+            margin-bottom:20px;
+            &.onphoto {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @include mq(sm) {
+                    display : block;
+                }
+                @include mq(md) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                .photo_tokushoku {
+                    width:40%;
+                    @include mq(sm) {
+                        width:100%;
+                    }
+                    @include mq(md) {
+                        width:40%;
+                    }
+                    .inner {
+                        padding:10px;
+                        border:solid 1px #e5e5e5;
+                        box-shadow:0 5px 10px rgba(#000,0.1);
+                        @include mq(sm) {
+                            padding:5px;
+                            border:solid 1px #e5e5e5;
+                            box-shadow:0 3px 5px rgba(#000,0.1);
+                        }
+                        @include mq(md) {
+                            padding:10px;
+                            border:solid 1px #e5e5e5;
+                            box-shadow:0 5px 10px rgba(#000,0.1);
+                        }
+                        @include mq(sm) {
+                            margin-bottom:10px;
+                        }
+                    }
+                }
+                .text_tokushoku {
+                    @include mq(sm) {
+                        width:100%;
+                    }
+                    @include mq(md) {
+                        width:58%;
+                    }
+                    h3 {
+                        font-size:18px;
+                        font-weight: bold;
+                        margin-bottom:10px;
+                    }
+                    p {
+                        font-size:13px;
+                    }
+                }
+            }
+            &.nophoto {}
+        }
+    }
+    .contents_info_table {
+        padding:10px;
+        & > li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom:10px;
+            &:last-child {
+                margin-bottom:0;
+            }
+            h3 {
+                font-size:13px;
+                width:35%;
+                padding:10px;
+                border-bottom:2px solid #d2d2d2;
+            }
+            .tbl_content {
+                font-size:13px;
+                width:65%;
+                padding:10px;
+                .small {
+                    font-size:12px;
+                }
+                border-bottom:2px solid #f0f0f0;
+            }
+        }
+    }
+    .contents_info_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom:-15px;
+        @include mq(sm) {
+            display : block;
+        }
+        @include mq(md) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        & > li {
+            width:32%;
+            margin-bottom:15px;
+            border-radius:5px;
+            box-shadow:0 2px 5px rgba(#000,0.1);
+            @include mq(sm) {
+                width:100%;
+            }
+            @include mq(md) {
+                width:32%;
+            }
+            &.content_setsubi {
+                padding:10px;
+                h3 {
+                    font-size:15px;
+                }
+                p {
+                    font-size:10px;
+                    color:#4f4f4f;
+                }
+            }
+            &.content_service {
+                padding:10px;
+                background-color: #1d2c5c;
+                color:#fff;
+                h3 {
+                    font-size:12px;
+                    text-align: center;
+                }
+                .cont_group {
+                    text-align: center;
+                    text-shadow:0 2px 2px rgba(#000,0.1);
+                    .cont_l {
+                        font-size:25px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            &.blank {
+                height:1px;
+            }
+        }
+    }
+
+    .daihyosha_greeting {
+        .onphoto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include mq(sm) {
+                display : block;
+            }
+            @include mq(md) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .photo {
+                width:40%;
+                @include mq(sm) {
+                    width:100%;
+                    margin-bottom:10px;
+                }
+                @include mq(md) {
+                    width:40%;
+                }
+                .inner {
+                    padding:10px;
+                    border:solid 1px #e5e5e5;
+                    box-shadow:0 5px 10px rgba(#000,0.1);
+                    @include mq(sm) {
+                        padding:5px;
+                        border:solid 1px #e5e5e5;
+                        box-shadow:0 3px 5px rgba(#000,0.1);
+                    }
+                    @include mq(md) {
+                        padding:10px;
+                        border:solid 1px #e5e5e5;
+                        box-shadow:0 5px 10px rgba(#000,0.1);
+                    }
+                }
+            }
+            .text {
+                width:56%;
+                @include mq(sm) {
+                    width:100%;
+                }
+                @include mq(md) {
+                    width:56%;
+                }
+                .greeting_text {
+                    font-size:13px;
+                    line-height:180%;
+                }
+                .daihyosha_name {
+                    font-size:15px;
+                    font-weight: bold;
+                    margin-top:10px;
+                    .daihyosha_post {
+                        margin-right:10px;
+                    }
+                }
+            }
+        }
+        .nophoto {
+            font-size:13px;
+            line-height:180%;
+        }
+    }
+
+    .gmap {
+        padding:10px;
+        border:solid 1px #e5e5e5;
+        box-shadow:0 5px 10px rgba(#000,0.1);
+        iframe {
+            width:100%;
+        }
+    }
+
+    .shiryo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & > div {
+            width:49%;
+            a {
+                display: block;
+                width:100%;
+                padding:20px;
+                background-color: #1d2c5c;
+                color:#FFF;
+                text-align: center;
+                border-radius: 3px;
+                font-weight: bold;
+                box-shadow:0px 5px 10px rgba(#000,0.25);
+            }
+        }
+    }
+}
