@@ -5,17 +5,11 @@ $theme_uri = get_theme_file_uri();
 if(empty($_GET['pagetype'])){
     include locate_template('controller/toppage.php');
 }
-elseif($_GET['pagetype'] == 'estimate_result'){
-    include locate_template('controller/estimate_result.php');
+elseif($_GET['pagetype'] == 'hr_result'){
+    include locate_template('controller/hr_result.php');
 }
-elseif($_GET['pagetype'] == 'estimate_contact' and is_numeric(@$_GET['id'])){
-    include locate_template('controller/estimate_contact.php');
-}
-elseif($_GET['pagetype'] == 'okuridashi_result'){
-    include locate_template('controller/okuridashi_result.php');
-}
-elseif($_GET['pagetype'] == 'okuridashi' and is_numeric(@$_GET['id'])){
-    include locate_template('controller/okuridashi.php');
+elseif($_GET['pagetype'] == 'hr_contact' and is_numeric(@$_GET['id'])){
+    include locate_template('controller/hr_contact.php');
 }
 elseif($_GET['pagetype'] == 'about_injp'){
     include locate_template('controller/about_injp.php');

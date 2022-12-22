@@ -6,7 +6,7 @@ $site_url = site_url();
 $insert_pref = null;
 
 echo '<?xml version="1.0" encoding="UTF-8"?>';
-echo '<?xml-stylesheet type="text/xsl" href="/ginojissu.injp/wp-content/plugins/xml-sitemap-feed/assets/sitemap-posttype.xsl?ver=5.3.3"?>';
+echo '<?xml-stylesheet type="text/xsl" href="/tokutei.injp/wp-content/plugins/xml-sitemap-feed/assets/sitemap-posttype.xsl?ver=5.3.3"?>';
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

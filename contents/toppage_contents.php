@@ -1,6 +1,6 @@
 <section class="mainvisual toppage_mainvisual">
     <div class="container mainvisual_content form">
-        <form id="contact-form" action="<?php echo site_url('/?pagetype=estimate_result'); ?>" method="post" enctype="multipart/form-data">
+        <form id="contact-form" action="<?php echo site_url('/?pagetype=hr_result'); ?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="wpnonce" value="<?php echo wp_create_nonce( get_bloginfo('name').'nonce_'.date('Ymd') ); ?>" />
             <div class="card">
                 <h2>特定技能外国人<br />紹介料0円 直接採用</h2>
@@ -169,7 +169,7 @@
             echo '<ul class="list">';
             while ( $the_query2->have_posts() ) {
                 $the_query2->the_post();
-                include get_template_directory().'/parts/estimate_result_loop.php';
+                include get_template_directory().'/parts/hr_result_loop.php';
             }
             echo '</ul>';
             wp_reset_postdata();

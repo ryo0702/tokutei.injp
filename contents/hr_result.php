@@ -13,7 +13,7 @@
 
         if(is_array(@$post_ids2)){
             $args2 = array(
-                'post_type' => 'estimates',
+                'post_type' => 'hr',
                 'posts_per_page' => @$show_page,
                 'post__in' => $post_ids2,
                 'orderby' => 'post__in',

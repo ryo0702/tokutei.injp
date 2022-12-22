@@ -3,7 +3,7 @@
         <div class="form card card_padding_l">
             <h2 class="title">その場でマッチング</h2>
             <p class="subtitle">登録なしで特定技能外国人とのマッチングが簡単に行えます。<br />しかも、紹介料は0円です。</p>
-            <form id="contact-form" action="<?php echo site_url('/?pagetype=estimate_result'); ?>" method="post" enctype="multipart/form-data">
+            <form id="contact-form" action="<?php echo site_url('/?pagetype=hr_result'); ?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="wpnonce" value="<?php echo wp_create_nonce( get_bloginfo('name').'nonce_'.date('Ymd') ); ?>" />
                 <div class="form_wrap">
                     <div class="form1">

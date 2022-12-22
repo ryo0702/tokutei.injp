@@ -1,6 +1,6 @@
 <?php
 $page_title = 'お問合せありがとうございました';
-$page_description = 'inJP技能実習へのお問合せ誠にありがとうございました。';
+$page_description = 'inJP特定技能へのお問合せ誠にありがとうございました。';
 
 $array_pankuzu = array(
     array(site_url(),'トップページ'),
