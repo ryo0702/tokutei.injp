@@ -8,14 +8,10 @@
                 <div class="form_wrap">
                     <div class="form1">
                         <select name="shokushu" id="shokushu" class="form-control">
-                            <option value="">職種を選択</option>
+                            <option value="">在留資格を選択</option>
                             <?php
-                            foreach ($array_shokushu_group as $group_title => $group_opt) {
-                                echo '<optgroup label="'.$group_title.'">';
-                                    foreach ($group_opt as $opt_value) {
-                                        echo '<option value="'.$opt_value[0].'">'.$opt_value[1].'</option>';
-                                    }
-                                echo '</optgroup>';
+                            foreach ($array_zairyushikaku as $opt_value) {
+                                echo '<option value="'.$opt_value.'">'.$opt_value.'</option>';
                             }
                             ?>
                         </select>

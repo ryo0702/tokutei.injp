@@ -2,6 +2,13 @@
 // load array
 include get_template_directory().'/array_common.php';
 
+$inser_array_pref = null;
+foreach ($array_pref_group2 as $area) {
+    foreach ($area as $pref) {
+        $inser_array_pref[$pref[1]] = $pref[1];
+    }
+}
+
 $array_metabox_hr = array(
     'id'        => 'hr',
     'title'     => '外国人人材',
@@ -72,6 +79,13 @@ $array_metabox_hr = array(
                     'type'  => 'number',
                     'options'  => $array_jlpt,
                     'title' => '希望手取り給料(円)',
+                ),
+                array(
+                    'id'    => 'pref',
+                    'type'  => 'select',
+                    'multiple' => true,
+                    'options'  => $inser_array_pref,
+                    'title' => '就労可能地域',
                 ),
                 array(
                     'id'    => 'toppageview',

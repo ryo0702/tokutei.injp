@@ -1,7 +1,7 @@
 <?php
 include get_template_directory().'/array_common.php';
-$page_title = '監理団体の選び方';
-$page_description = '監理団体(組合)選びは「近くにあるから」「友達の社長の紹介だから」という理由ではなく、自社に合った監理団体を選びましょう。';
+$page_title = '登録支援機関の選び方';
+$page_description = '登録支援機関(組合)選びは「近くにあるから」「友達の社長の紹介だから」という理由ではなく、自社に合った登録支援機関を選びましょう。';
 
 $array_pankuzu = array(
     array(site_url(),'トップページ'),

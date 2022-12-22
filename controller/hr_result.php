@@ -27,16 +27,16 @@ else{
     }
     // PageTitle
     if(!empty($_GET['pref']) and !empty($result_title_shokushu)){
-        $page_title = $_GET['pref'].'対応の'.$result_title_shokushu.'の監理団体のお見積り';
+        $page_title = $_GET['pref'].'対応の'.$result_title_shokushu.'の外国人人材';
     }
     elseif(!empty($_GET['pref'])){
-        $page_title = $_GET['pref'].'監理団体のお見積り';
+        $page_title = $_GET['pref'].'のの外国人人材';
     }
     elseif(!empty($result_title_shokushu)){
-        $page_title = $result_title_shokushu.'のお見積り';
+        $page_title = $result_title_shokushu.'のの外国人人材';
     }
     else{
-        $page_title = '技能実習生監理団体 最安値お見積り一覧';
+        $page_title = '特定技能可能な外国人人材一覧';
     }
     // Page Description
     $page_description = null;

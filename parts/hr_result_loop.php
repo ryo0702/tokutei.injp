@@ -1,13 +1,13 @@
 <?php
 $estdata = $this_title = $kanrihi = $okuridashi_name = $discount_description = $badge = null;
-$estdata = get_post_meta( get_the_ID(), 'estimates', true );
+$estdata = get_post_meta( get_the_ID(), 'hr', true );
 
 // Title
 if(!empty($estdata['kanridantai_name'])){
     $this_title = $estdata['kanridantai_name'];
 }
 else{
-    $this_title = '監理団体名未公開';
+    $this_title = '名前非公開';
 }
 
 // Kanrihi
