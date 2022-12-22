@@ -2,7 +2,7 @@
     <div class="container">
         <div class="flexbox_navbar wrap">
             <h1 class="logo flexbox_center">
-                <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/logo.png'; ?>" alt=""></a></div>
+                <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/injp-tokutei.png'; ?>" alt=""></a></div>
             </h1>
             <nav class="menu flexbox">
                 <ul class="flexbox">

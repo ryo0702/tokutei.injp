@@ -10,19 +10,9 @@ $array_cpt = array(
         'restapi'   => false,
         'supports'  => array('title'),
     ),
-    'estimates' => array(
-        'title'     => '見積もり',
-        'titles'    => '見積もり',
-        'public'    => true,
-        'adminmenu' => true,
-        'search'    => true,
-        'archive'   => true,
-        'restapi'   => false,
-        'supports'  => array('title'),
-    ),
-    'okuridashi' => array(
-        'title'     => '送り出し機関',
-        'titles'    => '送り出し機関',
+    'hr' => array(
+        'title'     => '外国人人材',
+        'titles'    => '外国人人材',
         'public'    => true,
         'adminmenu' => true,
         'search'    => true,

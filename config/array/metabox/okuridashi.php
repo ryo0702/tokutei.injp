@@ -31,11 +31,6 @@ $array_metabox_okuridashi = array(
             'icon'   => 'fas fa-heading',
             'fields' => array(
                 array(
-                    'id'    => 'logo',
-                    'type'  => 'media',
-                    'title' => 'ロゴ',
-                ),
-                array(
                     'id'    => 'okuridashi_eng_name',
                     'type'  => 'text',
                     'title' => '送り出し機関の正式名(英語もしくは所在地の言語)',

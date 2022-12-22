@@ -6,7 +6,6 @@ $array_select_lp = array(
     'type_construction' => '建設系',
 );
 
-
 $array_colors = array(
     'default' => array(
         'body' => array('default' => '#fff','section_bg1' => '#fff','section_bg1_text' => '#505050','section_bg2' => '#f3f3f3','section_bg2_text' => '#505050'),
