@@ -26,7 +26,7 @@
                 echo '<ul class="list">';
                 while ( $the_query2->have_posts() ) {
                     $the_query2->the_post();
-                    include get_template_directory().'/parts/estimate_result_loop.php';
+                    include get_template_directory().'/parts/hr_result_loop.php';
                 }
                 echo '</ul>';
                 wp_reset_postdata();

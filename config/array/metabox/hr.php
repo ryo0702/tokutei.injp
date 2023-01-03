@@ -22,19 +22,18 @@ $array_metabox_hr = array(
             'icon'   => 'fas fa-heading',
             'fields' => array(
                 array(
-                    'id'    => 'name_mei',
+                    'id'    => 'name_katakana',
                     'type'  => 'text',
-                    'title' => '名前(カタカナ：名)',
+                    'title' => '氏名(カタカナ)',
                 ),
                 array(
-                    'id'    => 'name_mid',
-                    'type'  => 'text',
-                    'title' => '名前(カタカナ：ミドル)',
-                ),
-                array(
-                    'id'    => 'name_sei',
-                    'type'  => 'text',
-                    'title' => '名前(カタカナ：姓)',
+                    'id'    => 'name_pub',
+                    'type'  => 'select',
+                    'title' => '名前の公開',
+                    'options' => array(
+                        '' => '公開',
+                        'off' => '非公開'
+                    )
                 ),
                 array(
                     'id'    => 'name_eiji',

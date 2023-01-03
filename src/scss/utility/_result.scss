@@ -48,6 +48,22 @@
                         margin-bottom:10px;
                     }
                 }
+                .profile_area {
+                    font-size:13px;
+                    margin-bottom:10px;
+                    .area_title {
+                        font-size:15px;
+                        display: inline-block;
+                        margin-right:10px;
+                    }
+                    .area_content {
+                        font-size:15px;
+                        display: inline-block;
+                        .bold {
+                            font-weight: bold;
+                        }
+                    }
+                }
                 .kanrihi_area {
                     font-size:13px;
                     margin-bottom:10px;

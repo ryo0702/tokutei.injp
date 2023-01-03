@@ -32,9 +32,7 @@
         <div class="logo_image"><a href="<?php echo site_url(); ?>"><img src="<?php echo $theme_uri.'/dist/images/injp-tokutei.png'; ?>" alt="inJP特定技能"></a></div>
         <ul>
             <li><a href="<?php echo site_url(); ?>">ホーム</a></li>
-            <li><a href="<?php echo site_url('/?pagetype=hr_result'); ?>">外国人人材一覧</a></li>
-            <li class="smallmenu">技能実習制度について</li>
-            <li><a href="<?php echo site_url('/?pagetype=about_seido'); ?>">特定技能外国人について</a></li>
+            <li><a href="<?php echo site_url('/?pagetype=hr_result'); ?>">人材一覧</a></li>
         </ul>
         <div class="drawermenu_close_button">閉じる</div>
     </div>

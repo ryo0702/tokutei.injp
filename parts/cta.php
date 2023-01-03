@@ -7,7 +7,7 @@
                 <input type="hidden" name="wpnonce" value="<?php echo wp_create_nonce( get_bloginfo('name').'nonce_'.date('Ymd') ); ?>" />
                 <div class="form_wrap">
                     <div class="form1">
-                        <select name="shokushu" id="shokushu" class="form-control">
+                        <select name="visa" id="visa" class="form-control">
                             <option value="">在留資格を選択</option>
                             <?php
                             foreach ($array_zairyushikaku as $opt_value) {

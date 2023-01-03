@@ -29,6 +29,6 @@ elseif($_GET['pagetype'] == 'company'){
 elseif($_GET['pagetype'] == 'rule'){
     include locate_template('controller/rule.php');
 }
-elseif($_GET['pagetype'] == 'xmlsitemap'){
-    include locate_template('controller/xmlsitemap.php');
-}
+// elseif($_GET['pagetype'] == 'xmlsitemap'){
+//     include locate_template('controller/xmlsitemap.php');
+// }

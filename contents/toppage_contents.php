@@ -4,10 +4,10 @@
             <input type="hidden" name="wpnonce" value="<?php echo wp_create_nonce( get_bloginfo('name').'nonce_'.date('Ymd') ); ?>" />
             <div class="card">
                 <h2>特定技能外国人<br />紹介料0円 直接採用</h2>
-                <p>特定技能外国人の採用が、なんと、<strong>紹介料0円でマッチング</strong>可能！採用が決まれば、そのままワンストップで手続き開始。</p>
+                <p>特定技能外国人の採用が、なんと、<strong>紹介料0円でマッチング</strong>可能！採用が決まれば、そのままワンストップで手続き開始。<br />※日本人・特定技能以外の在留資格のマッチングも行っています</p>
                 <div class="form_wrap">
                     <div class="form1">
-                        <select name="shokushu" id="shokushu" class="form-control">
+                        <select name="visa" id="visa" class="form-control">
                             <option value="">在留資格を選択</option>
                             <?php
                             foreach ($array_zairyushikaku as $opt_value) {
@@ -60,6 +60,7 @@
                 <li>紹介料が<span>高い</span>ので、雇用できない</li>
                 <li>雇用する人材なので<span>選びたい</span></li>
                 <li>ちゃんと自社に<span>マッチする</span>人材が欲しい</li>
+                <li>外国人人材の<span>指導・教育・管理</span>などの経験のある日本人を探したい</li>
             </ul>
         </div>
     </div>
@@ -69,18 +70,22 @@
     <div class="titleset">
         <div class="container">
             <h2 class="title">inJP特定技能なら<br />紹介費用は無料</h2>
-            <p class="lead container_xs">inJP技能実習生なら紹介費は無料です。なぜ紹介費無料でできるかというと、多くは技能実習生として日本に来ており、その後も日本で働きたい実習生を監理する監理団体が、元技能実習生の雇用先を確保するために、inJP技能実習に参加しているからです。</p>
+            <p class="lead container_xs">inJP特定技能は紹介費は無料の登録支援機関と提携をしています。</p>
         </div>
     </div>
     <div class="container_s">
         <div class="card card_padding_l card_blue">
             <h3 class="card_title">紹介費0円の登録支援機関が対応</h3>
             <p></h2>
-            <p class="lead container_xs">inJP技能実習生なら紹介費は無料です。なぜ紹介費無料でできるかというと、多くは技能実習生として日本に来ており、その後も日本で働きたい実習生を監理する監理団体が、元技能実習生の雇用先を確保するために、inJP技能実習に参加しているからです。</p>
+            <p class="lead container_xs">なぜ紹介費無料でできるかというと、多くは技能実習生として日本に来ており、その後も日本で働きたい実習生を監理する監理団体が、元技能実習生の雇用先を確保するために、inJP特定技能に参加しているからです。</p>
         </div>
         <div class="card card_padding_l card_blue margin_top_m">
-            <h3 class="card_title">外国人人材を選んで雇用</h3>
+            <h3 class="card_title">人材を選んで雇用</h3>
             <p>ほとんどの登録支援機関では、マッチする人材を探してから、1名づつ面接をするため、選べないのが現状です。inJP特定技能では、人材のデータベースを無料公開しています(プライバシー配慮の上)。そのため、事前にどのような人が集まっているか、誰と面接できるかを予め把握することができます。</p>
+        </div>
+        <div class="card card_padding_l card_blue margin_top_m">
+            <h3 class="card_title">指導経験のある日本人を雇用</h3>
+            <p>特定技能だけでなく、他の在留資格や外国人人材の指導や教育を経験したことのある日本人とのマッチングも行うことができます。</p>
         </div>
     </div>
 </section>
@@ -119,21 +124,25 @@
     <div class="titleset">
         <div class="container">
             <h2 class="title">サービスの流れ</h2>
-            <p class="lead container_xs">inJPを利用して、技能実習生を採用・監理団体を変更していただく流れをご紹介します。とても簡単なので、どなたでもすぐに希望の監理団体に連絡ができます。</p>
+            <p class="lead container_xs">inJPを利用して、特定技能外国人(特定活動含む)のマッチングの流れをご紹介致します。</p>
         </div>
     </div>
     <div class="container_s">
         <div class="card card_padding_l card_blue">
-            <h3 class="card_title">1.お見積りをする</h3>
-            <p>まずはエリアの選択・職種の選択をしてお見積り検索をしてください。該当するお見積りがその場で表示されます。この際、お見積りした監理団体から一斉に連絡が入るなどということはありませんのでご安心ください。</p>
+            <h3 class="card_title">1.採用したい特定技能・活動の人材を選ぶ</h3>
+            <p>各人材のプロフィールから採用したい特定技能・特定活動の人材を選びます。</p>
         </div>
         <div class="card card_padding_l card_blue margin_top_m">
-            <h3 class="card_title">2.お問合せ・ご相談</h3>
-            <p>良さそうな見積もり内容をもとにinJPにお問合せください。inJPから直接もしくは送り出し機関を通じて監理団体をご紹介します。</p>
+            <h3 class="card_title">2.ご連絡</h3>
+            <p>人材が見つかったらご連絡ください。事前登録等は必要ありません。</p>
         </div>
         <div class="card card_padding_l card_blue margin_top_m">
-            <h3 class="card_title">3.新規受け入れ・監理団体変更</h3>
-            <p>お問合せした組合でよかった場合、新規受け入れもしくは監理団体の変更を行なってください。inJP技能実習は企業様から費用は一切いただいておりませんので、ご安心ください。</p>
+            <h3 class="card_title">3.面接日・時間を調整</h3>
+            <p>マッチング後、オンライン面接の予定を決定し、その後面接を行います。</p>
+        </div>
+        <div class="card card_padding_l card_blue margin_top_m">
+            <h3 class="card_title">4.面接・採用</h3>
+            <p>面接後、双方雇用条件などに同意する場合、マッチング成立となります。</p>
         </div>
     </div>
 </section>
@@ -141,8 +150,8 @@
 <section class="toppage_overview section section_bgc_grey">
     <div class="titleset">
         <div class="container">
-            <h2 class="title">外国人人材一覧</h2>
-            <p class="lead container_xs">特定技能として在留資格が取れる外国人のみを掲載しています。また、本人の了承の上、プライバシーに配慮して個人情報が特定されないように配慮して掲載を行っています。</p>
+            <h2 class="title">人材一覧</h2>
+            <p class="lead container_xs">本人の了承の上、プライバシーに配慮して個人情報が特定されないように配慮して掲載を行っています。</p>
         </div>
     </div>
     <div class="result_top">
